@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <title>Angular-django presentación</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme.css" />
+    <script src="_static/main.js"></script>
+    <link rel="prev" title="Angular y Django de la mano" href="index.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides" role="main">
+            <a class="reference internal image-reference" href="https://raw.githubusercontent.com/Nekmo/angular-django-presentacion/master/logo.png"><img alt="https://raw.githubusercontent.com/Nekmo/angular-django-presentacion/master/logo.png" src="https://raw.githubusercontent.com/Nekmo/angular-django-presentacion/master/logo.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference external image-reference" href="https://github.com/Nekmo/angular-django-presentacion/actions?query=workflow%3ABuild"><img alt="Latest CI build status" src="https://img.shields.io/github/actions/workflow/status/Nekmo/angular-django-presentacion/build.yml?style=flat-square&amp;branch=master" /></a>
+<section  id="angular-django-presentacion">
+<h1>Angular-django presentación</h1>
+<p>Los mundos de Angular y Django pueden parecer muy dispares, pero ambos comparten lo que les define: su filosofía.
+Tanto Angular como Django son frameworks todo en uno, incluyendo todo lo necesario para el desarrollo. Veremos cómo
+estrechar ambos mundos a través de Django Rest Framework, y todo lo bueno que puede traer Django al desarrollador de
+Angular.</p>
+<p>La presentación está <a class="reference external" href="https://nekmo.github.io/angular-django-presentacion/">disponible online</a> ya compilada
+para su visualización.</p>
+</section>
+<section  id="requisitos-y-contenido">
+<h2>Requisitos y contenido</h2>
+<p>La presentación está orientada a desarrolladores de Angular, que estén interesados en desarrollo backend. No es
+necesario conocer Python o Django previamente, siendo ésta una presentación para conocer las ventajas de Django y cómo
+puede ser utilizado en conjunto con Angular. En la presentación se verán los siguientes puntos:</p>
+<ul class="simple">
+<li><p>Introducción a Python.</p></li>
+<li><p>Filosofía de Django y cómo se aplica a Angular.</p></li>
+<li><p>Django y sus características.</p></li>
+<li><p>Proxies en Angular.</p></li>
+<li><p>Django Rest Framework.</p></li>
+<li><p>Componentes y características de Django Rest Framework, y su relación con Angular.</p></li>
+<li><p>Interfaces y servicios en Angular.</p></li>
+<li><p>Angular-django.</p></li>
+</ul>
+</section>
+<section  id="motivacion">
+<h2>Motivación</h2>
+<p>Angular y Django son dos frameworks que comparten una filosofía similar: ser todo en uno. Django es un framework de
+Python que incluye todo lo necesario para el desarrollo web, al igual que Angular. Los desarrolladores de Angular
+encontrarán en Django una herramienta que comparte su misma filosofía, al mismo tiempo que aprovechan el ecosistema de
+Python. Esta charla está orientada a los siguientes perfiles:</p>
+<ul class="simple">
+<li><p>Desarrolladores Angular que deseen conocer alternativas a Node.js y Express.</p></li>
+<li><p>Desarrolladores de Angular que ya conociesen Python, o están interesados en su uso.</p></li>
+<li><p>Desarrolladores Django que deseen conocer cómo integrar Angular en sus proyectos.</p></li>
+</ul>
+<p>Es recomendable tener conocimientos previos de Angular, aunque no es necesario conocer Django o Python previamente.</p>
+</section>
+<section  id="acerca-de">
+<h2>Acerca de</h2>
+<p>Presentación para <a class="reference external" href="https://angularmalaga.com/">Angular Málaga</a> el día 17 de septiembre de 2024. Puedes
+utilizar esta misma presentación, íntegra o con modificaciones para cualquiera de los usos descritos en la licencia
+MIT adjunta en este proyecto.</p>
+</section>
+<section>
+<section  id="compilacion">
+<h2>Compilación</h2>
+<p>Para compilar desde el código fuente se requiere Python 3 instalado, estando probado sólo bajo Python 3.12. Se
+recomienda ejecutar los siguientes pasos en un
+<a class="reference external" href="https://nekmo.com/es/blog/python-virtualenvs-y-virtualenvwrapper/">virtualenv</a>:</p>
+<pre data-id="compilacion"><code data-trim data-noescape class="default"># Clonar proyecto
+git clone https://github.com/Nekmo/angular-django-presentacion.git
+cd angular-django-presentacion
+# Instalar dependencias
+pip install -r requirements.txt
+# Compilar ficheros de estilos
+sassc _static/theme.scss _static/theme.css
+# Compilar presentación
+make revealjs</code></pre>
+<p>Tras la compilación puede verse los ficheros resultantes en el directorio <code class="docutils literal notranslate"><span class="pre">_build</span></code>.</p>
+</section>
+<section  id="copyright">
+<h3>Copyright</h3>
+<p>Licencia MIT. Ver fichero <code class="docutils literal notranslate"><span class="pre">LICENSE.txt</span></code>.</p>
+<p>Nekmo 2024.</p>
+</section>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      <script src="_static/revealjs4/plugin/notes/notes.js"></script>
+      <script src="_static/revealjs4/plugin/highlight/highlight.js"></script>
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        Object.assign(revealjsConfig, 
+    {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        margin: 0.2,        
+        transition: "slide",
+    }
+);
+        
+        
+        
+          revealjsConfig.plugins = [
+            RevealNotes,RevealHighlight,
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>

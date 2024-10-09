@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <title>Angular y Django de la mano</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme.css" />
+    <script src="_static/main.js"></script>
+    <link rel="next" title="Angular-django presentación" href="README.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides" role="main">
+            <div class="toctree-wrapper compound">
+</div>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="intro">
+<h1><strong>Angular</strong> y <strong>Django</strong> de la mano</h1>
+<a class="reference internal image-reference" href="_images/angular-logo.svg"><img alt="_images/angular-logo.svg" src="_images/angular-logo.svg" width="500" /></a>
+<p>y</p>
+<a class="reference internal image-reference" href="_images/django-logo.svg"><img alt="_images/django-logo.svg" src="_images/django-logo.svg" width="330" /></a>
+<p>de la mano</p>
+<aside class="notes">Hola a todos.</aside></section>
+<section data-background-color="#4973ff" data-transition-speed="slow" data-transition="fade" id="id1">
+<h2>👋</h2>
+<aside class="notes">Quiero dar gracias por estar aquí, y a vosotros por venir. Tengo ya experiencia en esto de dar charlas, pero nunca
+había dado una charla aquí, y aún menos a un grupo de Angular. Por ello, me presento por si acaso...</aside></section>
+<section data-background-color="#333333" data-transition-speed="default" data-transition="fade" id="sobre-mi-nekmo">
+<h2>Sobre mí <strong>Nekmo</strong></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="_images/cara.svg"><img alt="_images/cara.svg" src="_images/cara.svg" width="200px" /></a>
+<p><em>Programador Python</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">Soy Juan José, más conocido en redes como Nekmo, y tal vez me conozcáis de charlas sobre Python...</aside></section>
+<section data-background-color="#4973ff" data-transition-speed="default" data-transition="fade" id="python-malaga">
+<h2>Python <strong>Málaga</strong></h2>
+<a class="reference internal image-reference" href="_images/python-malaga-logo.png"><img alt="_images/python-malaga-logo.png" src="_images/python-malaga-logo.png" style="width: 200px;" /></a>
+<aside class="notes">Es más, provengo de la asociación de Python Málaga, y me encuentro aquí un poco de incógnito.</aside></section>
+<section data-background-color="#333333" data-background-video="_static/incognito.mp4" data-background-video-loop="true" data-background-size="cover" id="incognito">
+<h2>Incógnito</h2>
+<aside class="notes">Pero no os preocupéis, que también tengo experiencia con Angular, el cual llevo utilizando desde AngularJS.
+Es más, es el otro gran framework que utilizo, junto con Django...</aside></section>
+<section data-background-color="#f18fed" data-transition-speed="default" data-transition="fade" id="angular-django">
+<h2>Angular + Django</h2>
+<a class="reference internal image-reference" href="_images/angular-logo.svg"><img alt="_images/angular-logo.svg" src="_images/angular-logo.svg" width="500" /></a>
+<p><code class="docutils literal notranslate"><span class="pre">+</span></code></p>
+<a class="reference internal image-reference" href="_images/django-logo.svg"><img alt="_images/django-logo.svg" src="_images/django-logo.svg" width="330" /></a>
+<aside class="notes">Y si utilizo Angular además de Django, es porque son dos frameworks que se complementan muy bien.</aside></section>
+<section data-background-color="#333333" data-transition-speed="default" data-transition="fade" id="python">
+<h2>Python</h2>
+<a class="reference internal image-reference" href="_images/python-logo.png"><img alt="_images/python-logo.png" src="_images/python-logo.png" style="width: 400px;" /></a>
+<aside class="notes">Aunque antes de hablar de Django, tal vez os preguntéis... ¿Por qué Python? Si seguramente muchos ya programaréis en
+Typescript/Node.</aside></section>
+<section data-background-color="#333333" data-transition-speed="default" data-transition="fade" id="ventajas-python">
+<h2>Ventajas <strong>Python</strong></h2>
+<ul class="simple">
+<li><p><strong>Fácil</strong> de aprender y sintaxis legible.</p></li>
+<li><p>Gran <strong>popularidad</strong> y comunidad.</p></li>
+<li><p>Potente en <strong>análisis de datos</strong>, <strong>machine learning</strong> y más.</p></li>
+<li><p>Con <strong>pilas incluidas</strong>.</p></li>
+<li><p><strong>Paquetes</strong> para todo y con gran <strong>soporte</strong>... como <strong>Django</strong>.</p></li>
+</ul>
+<aside class="notes">Entre algunos de los motivos para aprender un lenguaje adicional, encontramos... (LEER LISTA)</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="django">
+<h2>Django</h2>
+<a class="reference internal image-reference" href="_images/django-logo.svg"><img alt="_images/django-logo.svg" src="_images/django-logo.svg" width="800" /></a>
+<aside class="notes">Tal vez a Python le sobren las presentaciones, pero Django no se queda atrás.</aside></section>
+<section data-background-color="#7A03FD" data-transition-speed="default" data-transition="slide" id="angular">
+<h2>Angular</h2>
+<a class="reference internal image-reference" href="_images/angular-logo.svg"><img alt="_images/angular-logo.svg" src="_images/angular-logo.svg" width="1000" /></a>
+<aside class="notes">Es más, si me gusta Angular, seguramente sea por todo lo que comparte con Django en cuanto a filosofía. Es por ello
+que estoy convencido, que si os gusta Angular, os gustará Django.</aside></section>
+<section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="filosofia-comun">
+<h2><strong>Filosofía</strong> común</h2>
+<aside class="notes">Django, al igual que Angular, viene incluido con todo lo necesario para trabajar. Sin necesidad de paquetes de
+terceros, y con una estructura y metodología de trabajo clara y definida.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="el-framework-web-para-perfeccionistas-con-plazos-de-entrega">
+<h3>El framework web para <strong>perfeccionistas</strong> con plazos de <strong>entrega</strong></h3>
+<aside class="notes">Tal y como dice su eslogan, Django es un framework web para perfeccionistas con plazos de entrega. Y es que Django
+no sólo trae de todo, sino que permite trabajar de forma rápida y eficiente, gracias a su estructura y metodología.</aside></section>
+</section>
+<section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="caracteristicas">
+<h2>Características</h2>
+<ul class="simple">
+<li class="fragment"><p><strong>ORM</strong> para base de datos.</p></li>
+<li class="fragment"><p>Panel de <strong>administración</strong>.</p></li>
+<li class="fragment"><p>Sistema de <strong>usuarios</strong>, <strong>permisos</strong> y <strong>sesiones</strong>.</p></li>
+<li class="fragment"><p>Gestión de <strong>rutas</strong> y <strong>vistas</strong>.</p></li>
+<li class="fragment"><p><strong>Middleware</strong>.</p></li>
+<li class="fragment"><p><strong>Caché</strong>.</p></li>
+<li class="fragment"><p>Envío de <strong>correos</strong>...</p></li>
+</ul>
+<aside class="notes">Entre las características de Django, encontramos... (LEER LISTA)</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="orm">
+<h3>ORM</h3>
+<pre data-id="orm"><code data-trim data-noescape class="python"># models.py
+# ---------
+class Specie(models.Model):
+    identifier = models.CharField(_('Specie identifier'),
+                                  max_length=50)
+    color = models.CharField(max_length=8, choices=COLORS)
+    gender_rate = models.SmallIntegerField()
+    has_gender_differences = models.BooleanField()</code></pre>
+<aside class="notes">Y entre todas ellas, tal vez mi favorita sea el ORM. Creedme cuando os digo que es una maravilla. Es el más
+fácil de usar y potente que he probado. Con un sistema de migraciones que os hará la vida más fácil. Con múltiples
+motores de base de datos soportados.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="administracion">
+<h3><strong>Administración</strong></h3>
+<img alt="_images/admin.png" src="_images/admin.png" />
+<aside class="notes">Pero su admin no se queda atrás. El panel de administración de Django se autoconstruye a partir de los modelos que
+se definan, siendo muy fáciles de personalizar y extender. Resulta un gran apoyo para trabajar con los datos de la
+aplicación, con un esfuerzo mínimo.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="usuarios-y-permisos">
+<h3>Usuarios y <strong>permisos</strong></h3>
+<img alt="_images/groups.png" src="_images/groups.png" />
+<aside class="notes">Incluso nos viene ya con un sistema de usuarios, permisos, autenticación, sesiones... Todo lo necesario para empezar
+a crear una aplicación web. Extensible y personalizable, por supuesto. Y sobre todo, estandarizado, al igual que
+en Angular.</aside></section>
+</section>
+<section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="como-pueden-trabajar-juntos">
+<h2>¿Cómo pueden trabajar <strong>juntos</strong>?</h2>
+<aside class="notes">Pero, ¿cómo podemos hacer que ambos se comuniquen?</aside></section>
+<section data-background-color="#7A03FD" data-transition-speed="default" data-transition="slide" id="proxy-conf-json">
+<h3>proxy.conf.json</h3>
+<pre data-id="proxy-conf-json"><code data-trim data-noescape class="json">{
+  &quot;/api&quot;: {
+    &quot;target&quot;: &quot;http://localhost:8000&quot;,
+    &quot;secure&quot;: false
+  }
+}</code></pre>
+<aside class="notes">Es tan sencillo como configurar un proxy en Angular, para que todas las peticiones a la ruta /api sean
+redirigidas a Django. Pero... ¿cómo responderá Django?</aside></section>
+</section>
+<section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="django-rest-framework">
+<h2>Django Rest <strong>Framework</strong></h2>
+<aside class="notes">Aunque antes hemos dicho que Django viene con todo, para disponer de una API REST disponemos de Django Rest
+Framework, una biblioteca que es de facto el estándar para crear APIs REST en Django.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="ejemplo-web">
+<h3>Ejemplo web</h3>
+<img alt="_images/api-web-list.png" src="_images/api-web-list.png" />
+<aside class="notes">Seguramente hayáis visto muchas APIs REST, pero no creo que muchas tan vistosas como la de Django Rest Framework,
+la cual nos viene de serie así.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="formulario">
+<h3><strong>Formulario</strong></h3>
+<img alt="_images/api-web-admin.png" src="_images/api-web-admin.png" />
+<aside class="notes">Incluso nos ofrece una vista de edición con un formulario, para utilizar la API como si fuese un panel de
+administración y de pruebas. Un panel que podemos personalizar.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="swagger">
+<h3><strong>Swagger</strong></h3>
+<img alt="_images/api-web-swagger.png" src="_images/api-web-swagger.png" />
+<aside class="notes">Por supuesto, también nos ofrece un Swagger, el cual se autoconstruye...</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="api-doc">
+<h3>API <strong>Doc</strong></h3>
+<img alt="_images/api-web-doc.png" src="_images/api-web-doc.png" />
+<aside class="notes">... y una documentación. De serie.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="id2">
+<h3>Características</h3>
+<ul class="simple">
+<li class="fragment"><p><strong>Interpretar</strong> y <strong>renderizar</strong> a múltiples formatos.</p></li>
+<li class="fragment"><p><strong>Clases genéricas</strong> para facilitar operaciones <strong>CRUD</strong>.</p></li>
+<li class="fragment"><p>Potentes <strong>serializers</strong> para trabajar <strong>con o sin</strong> el <strong>ORM</strong>.</p></li>
+<li class="fragment"><p><strong>Paginación</strong>, <strong>filtrado</strong>, <strong>búsqueda</strong> y <strong>ordenación</strong> en listados.</p></li>
+<li class="fragment"><p>Compatible con los <strong>validadores</strong> y <strong>sistema de permisos</strong> de Django.</p></li>
+<li class="fragment"><p>... entre <strong>otras opciones</strong>.</p></li>
+</ul>
+<aside class="notes">Pero esto no es todo lo que Django Rest Framework ofrece. Entre sus características, encontramos... (LEER LISTA)</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="como-se-divide">
+<h3>Cómo se <strong>divide</strong></h3>
+<ul class="simple">
+<li class="fragment"><p><strong>Serializers</strong>: representan e interpretan los datos.</p></li>
+<li class="fragment"><p><strong>Viewsets</strong>: gestionan las peticiones y devuelven la respuesta.</p></li>
+<li class="fragment"><p><strong>Routers</strong>: corresponde a las urls que se utilizarán.</p></li>
+</ul>
+<aside class="notes">Y al igual que Angular, que se divide en módulos, componentes y rutas, Django Rest Framework tiene su propia
+forma de dividirse. Entre sus partes, encontramos... (LEER LISTA). Como veis, estos dos últimos puntos son muy
+similares a Angular. Vamos a verlos un poco más en detalle...</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="serializers">
+<h3><strong>Serializers</strong></h3>
+<pre data-id="serializers"><code data-trim data-noescape class="python" data-line-numbers="1-7|6|7|"> # serializers.py
+ # --------------
+ class SpecieSerializer(serializers.HyperlinkedModelSerializer):
+
+     class Meta:
+         model = Specie
+         exclude = ()</code></pre>
+<aside class="notes">Los Serializers son los encargados de representar e interpretar los datos. (1) En este caso, estamos creando un
+Serializer para el modelo Specie, y no nos es necesario definir los campos, ya que se autoconstruye a partir
+del modelo. (2) Pero si queremos, podemos personalizarlo.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="serializer-personalizado">
+<h3>Serializer <strong>personalizado</strong></h3>
+<pre data-id="serializer-personalizado"><code data-trim data-noescape class="python" data-line-numbers="1-12|5-8|"> # serializers.py
+ # --------------
+ class SpecieSerializer(serializers.HyperlinkedModelSerializer):
+
+     identifier = serializers.CharField()
+     color = serializers.ChoiceField(choices=COLORS)
+     gender_rate = serializers.IntegerField()
+     has_gender_differences = serializers.BooleanField(default=False)
+
+     class Meta:
+         model = Specie
+         exclude = ()</code></pre>
+<aside class="notes">Ya en este ejemplo, (1) estamos personalizando el Serializer, pudiendo añadir campos que no existan en el modelo,
+o cambiar el tipo de campo, sus validaciones, etc.</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="viewsets">
+<h3><strong>Viewsets</strong></h3>
+<pre data-id="viewsets"><code data-trim data-noescape class="python" data-line-numbers="1-13|4-7|9-13|"> class SpecieViewSet(viewsets.ViewSet):
+     &quot;&quot;&quot;A simple ViewSet for listing or retrieving species.&quot;&quot;&quot;
+
+     def list(self, request):
+         queryset = Specie.objects.all()
+         serializer = SpecieSerializer(queryset, many=True)
+         return Response(serializer.data)
+
+     def retrieve(self, request, pk=None):
+         queryset = Specie.objects.all()
+         user = get_object_or_404(queryset, pk=pk)
+         serializer = SpecieSerializer(user)
+         return Response(serializer.data)</code></pre>
+<aside class="notes">Tal y como hemos dicho antes, los Viewsets son los encargados de gestionar las peticiones y devolver la respuesta.
+(1) En este caso, estamos utilizando el serializer anterior para devolver un listado y (2) el detalle de uno de
+ellos...</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="modelviewset">
+<h3><strong>ModelViewSet</strong></h3>
+<pre data-id="modelviewset"><code data-trim data-noescape class="python" data-line-numbers="1-22|1|1-7|17-22|11-15|"> class SpecieViewSet(viewsets.ModelViewSet):
+     &quot;&quot;&quot;
+     This viewset automatically provides `list`, `create`, `retrieve`,
+     `update` and `destroy` actions.
+
+     Additionally we also provide an extra `photo` action.
+     &quot;&quot;&quot;
+     queryset = Specie.objects.select_related('growth_rate', 'shape',
+                                              'habitat')
+     serializer_class = SimpleSpecieSerializer
+     filter_class = SpecieFilter
+     ordering_fields = ('identifier', 'generation', 'evolves_from_specie',
+                        'color')
+     search_fields = ('identifier', 'generation__identifier',
+                      'shape__identifier')
+
+     &#64;action(detail=True)
+     def photo(self, *args, **kwargs):
+         obj = self.get_object()
+         photo_url = PHOTO_FORMAT_URL.format(**vars(obj))
+         return Response(headers={'Location': photo_url},
+                         status=status.HTTP_302_FOUND)</code></pre>
+<aside class="notes">Pero con Django Rest Framework ni siquiera es necesario definir dichos métodos básicos. (1) Usando un ModelViewSet,
+(2) ya tenemos todos los métodos CRUD disponibles, (3) y podemos añadir métodos adicionales, como en este caso, un
+método para devolver una imagen. (4) Podemos personalizar además los listados añadiendo filtros, ordenación,
+búsqueda...</aside></section>
+<section data-background-color="#0C4B33" data-transition-speed="default" data-transition="slide" id="routers">
+<h3><strong>Routers</strong></h3>
+<pre data-id="routers"><code data-trim data-noescape class="python"># routers.py
+# ----------
+
+router = DefaultRouter()
+router.register(r'pokemon', viewsets.PokemonViewSet)
+router.register(r'species', viewsets.SpecieViewSet)
+router.register(r'growth_rates', viewsets.GrowthRateViewSet)
+router.register(r'shapes', viewsets.ShapeViewSet)
+router.register(r'habitats', viewsets.HabitatViewSet)
+router.register(r'generations', viewsets.GenerationViewSet)
+router.register(r'regions', viewsets.RegionViewSet)</code></pre>
+<aside class="notes">Y finalmente los routers, los cuales no son muy diferentes a los routers de Angular.</aside></section>
+</section>
+<section data-background-color="#7A03FD" data-transition-speed="default" data-transition="slide" id="como-usamos-nuestra-api-en-angular">
+<h2>¿Cómo usamos nuestra <strong>API</strong> en <strong>Angular</strong>?</h2>
+<aside class="notes">Vale, ya hemos visto nuestra API REST en Django, y hemos dicho cómo conectar ambos mundos a través de los proxies de
+Angular. Pero... ¿cómo trabajamos con la API en Angular?</aside></section>
+<section data-background-color="#7A03FD" data-transition-speed="default" data-transition="slide" id="interfaces-en-angular">
+<h2><strong>Interfaces</strong> en Angular</h2>
+<pre data-id="interfaces-en-angular"><code data-trim data-noescape class="typescript">export interface Specie {
+    url: string;
+    identifier: string;
+    color: string;
+    gender_rate: number;
+    has_gender_differences: boolean;
+}</code></pre>
+<aside class="notes">Lo primero, y aunque no es obligatorio, recomiendo definir las interfaces con lo que nos vendrá de nuestra API. Es el equivalente a los Serializers de Django Rest Framework.</aside></section>
+<section data-background-color="#7A03FD" data-transition-speed="default" data-transition="slide" id="servicios-de-angular">
+<h2><strong>Servicios</strong> de Angular</h2>
+<pre data-id="servicios-de-angular"><code data-trim data-noescape class="typescript">&#64;Injectable({
+    providedIn: 'root'
+})
+export class SpecieService {
+    private readonly url = '/api/species/';
+
+    constructor(private http: HttpClient) {}
+
+    list(): Observable&lt;Specie[]&gt; {
+        return this.http.get&lt;Specie[]&gt;(this.url);
+    }
+}</code></pre>
+<aside class="notes">Y aunque podríamos utilizar directamente el HttpClient en los componentes, recomiendo encapsularlo en servicios, para poder reutilizarlo y testearlo más fácilmente.</aside></section>
+<section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="id3">
+<h2>Angular-django</h2>
+<img alt="_images/angular-django.png" src="_images/angular-django.png" />
+<aside class="notes">Para facilitar este trabajo, tengo creada una biblioteca encargada de generar automáticamente los servicios y las
+interfaces de Angular a partir de los Serializers de Django Rest Framework. No obstante, ésta se encuentra en una
+fase temprana de desarrollo y desactualizada en estos momentos. Pero si recibo suficiente interés, priorizaré su
+desarrollo.</aside></section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="angular-django-forms">
+<h3>Angular-django <strong>forms</strong></h3>
+<img alt="_images/angular-django-forms.png" src="_images/angular-django-forms.png" />
+<aside class="notes">Incluso nos viene con generación automática de formularios para Material, con validaciones y mensajes de error.</aside></section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="angular-django-tables">
+<h3>Angular-django <strong>tables</strong></h3>
+<img alt="_images/angular-django-tables.png" src="_images/angular-django-tables.png" />
+<aside class="notes">Y también con generación automática de tablas para Material, con paginación, ordenación y búsqueda.</aside></section>
+<section data-background-color="#333333" data-background-video="_static/demo.mp4" data-background-video-loop="true" data-background-size="cover" id="demo">
+<h3>Demo</h3>
+<aside class="notes">Pero mejor, vamos a verlo con una demostración en directo.</aside></section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="donde-se-encuentra">
+<h3>¿<strong>Dónde</strong> se encuentra?</h3>
+<p><a class="reference external" href="https://angular-django.nekmo.org/">🌐 angular-django.nekmo.org</a></p>
+<aside class="notes">Y si queréis volver a ver y probar por vosotros mismos esta demo, se encuentra disponible online en mi sitio web.</aside></section>
+</section>
+<section>
+<section data-background-color="#333333" data-transition-speed="default" data-transition="fade" id="y-esta-presentacion">
+<h2>¿Y esta <strong>presentación</strong>?</h2>
+<p><a class="reference external" href="https://github.com/Nekmo/angular-django-presentacion">🌐 github:Nekmo/angular-django-presentacion</a></p>
+<aside class="notes">Y si lo que queréis es ver esta presentación, junto con su código fuente, también se encuentra disponible en GitHub.</aside></section>
+<section data-background-color="#4973ff" data-transition-speed="default" data-transition="none" id="codigo-qr">
+<h3>Código QR</h3>
+<a class="reference internal image-reference" href="_images/qr.svg"><img alt="QR" class="align-center" src="_images/qr.svg" width="600px" /></a>
+<aside class="notes">Por si os es más fácil, aquí también la tenéis disponible, como un código QR.</aside></section>
+</section>
+<section>
+<section data-background-gradient="linear-gradient(-45deg, #0C4B33, #44B78B, #7A03FE, #EF0812);" id="muchas-gracias-a-todos">
+<h2>¡Muchas gracias a todos!</h2>
+<aside class="notes">¡Muchas gracias a todos por llegar hasta aquí!</aside></section>
+<section data-background-color="#333333" data-transition="none" data-transition-speed="slow" id="contactar">
+<h3>Contactar</h3>
+<ul class="simple">
+<li><p>🌐 <strong>Sitio web:</strong> <a class="reference external" href="https://nekmo.com">nekmo.com</a></p></li>
+<li><p>📫 <strong>Email:</strong> <a class="reference external" href="mailto:contacto&#37;&#52;&#48;nekmo&#46;com">contacto<span>&#64;</span>nekmo<span>&#46;</span>com</a></p></li>
+<li><p>🐦 <strong>Twitter:</strong> <a class="reference external" href="https://twitter.com/nekmocom">&#64;nekmocom</a></p></li>
+<li><p>📱 <strong>Telegram:</strong> <a class="reference external" href="https://t.me/nekmo">&#64;nekmo</a></p></li>
+<li><p>💡 <strong>Jabber:</strong> <a class="reference external" href="xmpp://nekmo&#64;nekmo.org">nekmo&#64;nekmo.org</a></p></li>
+</ul>
+<aside class="notes">Y también, si tenéis alguna duda, aquí tenéis mis formas de contacto.</aside></section>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      <script src="_static/revealjs4/plugin/notes/notes.js"></script>
+      <script src="_static/revealjs4/plugin/highlight/highlight.js"></script>
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        Object.assign(revealjsConfig, 
+    {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        margin: 0.2,        
+        transition: "slide",
+    }
+);
+        
+        
+        
+          revealjsConfig.plugins = [
+            RevealNotes,RevealHighlight,
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>
