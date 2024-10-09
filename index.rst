@@ -96,8 +96,8 @@ Incógnito
 
 .. revealjs-notes::
 
-   Pero no os preocupéis, que no vengo de incógnito. También tengo experiencia con Angular, el cual llevo utilizando
-   desde Angular JS. Es más, es el otro gran framework que utilizo, junto con Django...
+   Pero no os preocupéis, que también tengo experiencia con Angular, el cual llevo utilizando desde AngularJS.
+   Es más, es el otro gran framework que utilizo, junto con Django...
 
 
 
@@ -418,7 +418,7 @@ Ejemplo web
 
 .. revealjs-notes::
 
-   Por supuesto, también nos ofrece un Swagger, el cual autoconstruye...
+   Por supuesto, también nos ofrece un Swagger, el cual se autoconstruye...
 
 
 API **Doc**
@@ -492,7 +492,8 @@ Cómo se **divide**
     :data-transition: slide
 
 
-.. code-block:: python
+.. revealjs-code-block:: python
+   :data-line-numbers: 1-7|6|7|
 
     # serializers.py
     # --------------
@@ -504,9 +505,9 @@ Cómo se **divide**
 
 .. revealjs-notes::
 
-    Los Serializers son los encargados de representar e interpretar los datos. En este caso, estamos creando un
+    Los Serializers son los encargados de representar e interpretar los datos. (1) En este caso, estamos creando un
     Serializer para el modelo ``Specie``, y no nos es necesario definir los campos, ya que se autoconstruye a partir
-    del modelo. Pero si queremos, podemos personalizarlo.
+    del modelo. (2) Pero si queremos, podemos personalizarlo.
 
 
 Serializer **personalizado**
@@ -518,7 +519,8 @@ Serializer **personalizado**
     :data-transition: slide
 
 
-.. code-block:: python
+.. revealjs-code-block:: python
+   :data-line-numbers: 1-12|5-8|
 
     # serializers.py
     # --------------
@@ -535,7 +537,7 @@ Serializer **personalizado**
 
 .. revealjs-notes::
 
-    Ya en este ejemplo, estamos personalizando el Serializer, pudiendo añadir campos que no existan en el modelo,
+    Ya en este ejemplo, (1) estamos personalizando el Serializer, pudiendo añadir campos que no existan en el modelo,
     o cambiar el tipo de campo, sus validaciones, etc.
 
 
@@ -547,7 +549,8 @@ Serializer **personalizado**
     :data-transition-speed: default
     :data-transition: slide
 
-.. code-block:: python
+.. revealjs-code-block:: python
+   :data-line-numbers: 1-13|4-7|9-13|
 
     class SpecieViewSet(viewsets.ViewSet):
         """A simple ViewSet for listing or retrieving species."""
@@ -566,7 +569,8 @@ Serializer **personalizado**
 .. revealjs-notes::
 
    Tal y como hemos dicho antes, los Viewsets son los encargados de gestionar las peticiones y devolver la respuesta.
-   En este caso, estamos utilizando el serializer anterior para devolver un listado y el detalle de uno de ellos...
+   (1) En este caso, estamos utilizando el serializer anterior para devolver un listado y (2) el detalle de uno de
+   ellos...
 
 
 **ModelViewSet**
@@ -577,7 +581,8 @@ Serializer **personalizado**
     :data-transition-speed: default
     :data-transition: slide
 
-.. code-block:: python
+.. revealjs-code-block:: python
+   :data-line-numbers: 1-22|1|1-7|17-22|11-15|
 
     class SpecieViewSet(viewsets.ModelViewSet):
         """
@@ -604,9 +609,10 @@ Serializer **personalizado**
 
 .. revealjs-notes::
 
-   Pero con Django Rest Framework ni siquiera es necesario definir dichos métodos básicos. Usando un ModelViewSet,
-   ya tenemos todos los métodos CRUD disponibles, y podemos añadir métodos adicionales, como en este caso, un método
-   para devolver una imagen. Podemos personalizar además dichos métodos, añadiendo filtros, ordenación, búsqueda...
+   Pero con Django Rest Framework ni siquiera es necesario definir dichos métodos básicos. (1) Usando un ModelViewSet,
+   (2) ya tenemos todos los métodos CRUD disponibles, (3) y podemos añadir métodos adicionales, como en este caso, un
+   método para devolver una imagen. (4) Podemos personalizar además los listados añadiendo filtros, ordenación,
+   búsqueda...
 
 
 **Routers**
